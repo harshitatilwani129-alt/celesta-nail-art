@@ -1,0 +1,68 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --primary-sky: #87CEEB;
+    --primary-sky-deep: #5fa8cc;
+    --ice-blue: #DDF4FF;
+    --ocean-blue: #2677A8;
+    --navy-text: #11283B;
+  }
+
+  html, body {
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+    color: #1a3348;
+    background-image: url('/src/assets/images/sky_blue_gingham_bows_bg_1791702604222.jpg');
+    background-repeat: repeat;
+    background-size: 380px auto;
+    background-attachment: fixed;
+    overflow-x: hidden;
+  }
+
+  h1, h2, h3, .font-editorial {
+    font-family: 'Playfair Display', Georgia, serif;
+  }
+}
+
+/* Custom organic shapes & glass reflections */
+.glass-panel {
+  background: rgba(255, 255, 255, 0.75);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.85);
+}
+
+.glass-acrylic {
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.6) 0%, rgba(221, 244, 255, 0.35) 100%);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.9);
+  box-shadow: 0 20px 40px -15px rgba(38, 119, 168, 0.12), inset 0 1px 2px rgba(255, 255, 255, 0.8);
+}
+
+.organic-blob-1 {
+  border-radius: 64% 36% 70% 30% / 48% 62% 38% 52%;
+}
+
+.organic-blob-2 {
+  border-radius: 41% 59% 47% 53% / 44% 43% 57% 56%;
+}
+
+.organic-blob-3 {
+  border-radius: 73% 27% 56% 44% / 38% 54% 46% 62%;
+}
+
+/* Shimmer reflection */
+.shimmer-reflect {
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.6), transparent);
+  background-size: 200% 100%;
+}
+
+/* Sky-blue Gingham with bows & cherries wallpaper */
+.bg-gingham-wallpaper {
+  background-image: url('/src/assets/images/sky_blue_gingham_bows_bg_1791702604222.jpg');
+  background-repeat: repeat;
+  background-size: 340px auto;
+  background-attachment: fixed;
+}
+
